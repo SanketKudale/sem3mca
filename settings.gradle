@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        jcenter()
+        google()
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+
+    repositories {
+        google()
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        jcenter()
+    }
+}
+rootProject.name = "ExpenseTracker"
+include ':app'

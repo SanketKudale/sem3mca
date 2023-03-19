@@ -4,26 +4,36 @@ plugins {
 }
 
 android {
-    namespace 'com.kanchal.expensetracker'
+    namespace 'com.kanchalk.expensetracker'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.kanchal.expensetracker"
+        applicationId "com.kanchalk.expensetracker"
         minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
-        compileSdkPreview = "UpsideDownCake"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug{
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    configurations.all {
+        resolutionStrategy {
+            force("androidx.core:core-ktx:1.9.0")
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

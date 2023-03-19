@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:208193646676:android:b68f3a727ae3a94aed7dc1",
         "android_client_info": {
-          "package_name": "com.kanchal.expensetracker"
+          "package_name": "com.kanchalk.expensetracker"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "208193646676-alvsnmpift5pvbrmlbe91ro1mhvpmejh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.kanchal.expensetracker",
+            "package_name": "com.kanchalk.expensetracker",
             "certificate_hash": "e189a8c5a42d478b2d5d328a21fc46b09eec35b6"
           }
         },
